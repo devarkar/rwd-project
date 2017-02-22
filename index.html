@@ -25,11 +25,17 @@
                          sizes='(min-width: 960px) 960px, 100vw' />
 -->
                     <picture>
+                        
                         <source media="(min-width:401px)" 
-                                srcset="img/photo-big.jpg" />
+                                srcset="img/photo-big.jpg 2000w,
+                                        img/photo-small.jpg 1000w"
+                                sizes="(min-width: 960px) 960px, 100vw" />
+                        
                         <source media="(max-width:400px)" 
                                 srcset="img/photo-tall.jpg" />
+                        
                         <img src="img/photo-small.jpg" />
+                        
                     </picture>
                     
                 </div>
