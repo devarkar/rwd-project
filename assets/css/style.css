@@ -207,6 +207,60 @@ footer div {
 }
 
 
+                                /* Footer Site Map Section */
+
+footer div.site-map{
+    padding: 10px;
+/*    border: 1px solid red;*/
+    height: auto;
+}
+
+footer div.site-map h3{
+    font-size: 25px;
+    color: #c5181e;
+    line-height: 30px;
+    border-bottom: 1px solid white;
+    width: 60px;    
+}
+
+footer div.site-map ul {    
+    font-size: 18px;
+    padding: 10px 0px 10px 0px;   
+}    
+
+footer div.site-map a{
+    text-decoration: none;    
+    color: white;
+}
+
+
+                                /* Footer Address Section */
+footer div.address {
+/*    border: 1px solid red;*/
+    padding: 10px;
+    height: auto;
+}
+
+footer div.address h3{
+    font-size: 25px;
+    color: #c5181e;
+    line-height: 30px;
+    border-bottom: 1px solid white;
+    width: 160px;
+}
+
+footer div.address h4{
+    font-size: 20px;
+}
+
+footer div.address p{
+    font-size: 18px;
+    padding: 10px 0px 10px 0px;
+}
+
+
+                                /* Footer Social Media Section */
+
 footer div.social-media{
     display: flex;
     flex-direction: column;
@@ -241,7 +295,7 @@ footer div.social-media div{
     margin-bottom: -25px;
 }
 
-
+                                /* Footer Copyright Section */
 
 footer div.copyright{
     font-size: 1em;
