@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
         <title>Responsive Design Testing</title>
         <link rel="stylesheet" href="assets/css/style.css"/>
+        <link href="//db.onlinewebfonts.com/c/152a08c8b8694816976650908f097735?family=Accidental+Presidency+V2+V2" rel="stylesheet" type="text/css"/>
+        <script src="https://use.fontawesome.com/8080ddcafb.js"></script>
     </head>
     
     <body>
@@ -26,19 +28,64 @@
                         <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">Events</a>
+                        <a class="dropdown-btn-event" href="#">
+                            Events                             
+                            <i style="font-size:15px" class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-list-event">
+                            <li>
+                                <a href="#">WLC</a>                                
+                            </li>
+                            <li>
+                                <a href="#">Lekkha Moun Fight</a>
+                            </li>                        
+                        </ul>
+                        
                     </li>
                     <li>
-                        <a href="#">Headlines</a>
+                        <a class="dropdown-btn-news" href="#">
+                            Headlines
+                            <i style="font-size:15px" class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-list-news">
+                            <li>
+                                <a href="#">WLC</a>                                
+                            </li>
+                            <li>
+                                <a href="#">Lekkha Moun Fight</a>
+                            </li>                        
+                        </ul>
                     </li>
                     <li>
                         <a href="#">Fighters</a>
                     </li>
-                    <li>
-                        <a href="#">About</a>
+                    <li>                        
+                        <a class="dropdown-btn-about" href="#">
+                            About
+                            <i style="font-size:15px" class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-list-about">
+                            <li>
+                                <a href="#">WLC</a>                                
+                            </li>
+                            <li>
+                                <a href="#">Lekkha Moun Fight</a>
+                            </li>                        
+                        </ul>
                     </li>
-                    <li>
-                        <a href="#">Media</a>
+                    <li>                        
+                        <a class="dropdown-btn-media" href="#">
+                            Media
+                            <i style="font-size:15px" class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-list-media">
+                            <li>
+                                <a href="#">WLC</a>                                
+                            </li>
+                            <li>
+                                <a href="#">Lekkha Moun Fight</a>
+                            </li>                        
+                        </ul>
                     </li>
                     <li>
                         <a href="#">Play Fantasy</a>
@@ -113,10 +160,38 @@
         <script>
             $(function(){
                 $('.mobile-btn').on('click',function(){
-//                    $('.mobile-nav-list').fadeToggle().toggleClass('open');
                     $('.mobile-nav-list').toggleClass('open');
                 });
             });
         </script>
+        <script>
+            $(function(){
+                $('.dropdown-btn-event').on('click',function(){
+                    $('.dropdown-list-event').toggleClass('open');
+                });
+            });
+        </script>
+        <script>
+            $(function(){
+                $('.dropdown-btn-news').on('click',function(){
+                    $('.dropdown-list-news').toggleClass('open');
+                });
+            });
+        </script>
+        <script>
+            $(function(){
+                $('.dropdown-btn-about').on('click',function(){
+                    $('.dropdown-list-about').toggleClass('open');
+                });
+            });
+        </script>
+        <script>
+            $(function(){
+                $('.dropdown-btn-media').on('click',function(){
+                    $('.dropdown-list-media').toggleClass('open');
+                });
+            });
+        </script>
+        
     </body>
 </html>
