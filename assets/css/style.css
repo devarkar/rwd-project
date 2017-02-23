@@ -185,9 +185,9 @@ Drop Down List
 .mobile-nav-list .dropdown-list-event li a,
 .mobile-nav-list .dropdown-list-about li a,
 .mobile-nav-list .dropdown-list-news li a,
-.mobile-nav-list .dropdown-list-media li a
-{
+.mobile-nav-list .dropdown-list-media li a {
     color: #000;
+    display: block;
 }
 
 
@@ -262,8 +262,38 @@ Drop Down List
         
         margin: 0;
         padding: 0;
+        
+        position: relative;
+/*        border: 3px solid red;*/
     }
     
+    
+    /*  Desktop View မှာ Nav က ကောင်းကောင်းပေါ်ဖို့ Modify ဒီမှာ လုပ်ထား  */
+    .mobile-nav-list .dropdown-list-event,
+    .mobile-nav-list .dropdown-list-about,
+    .mobile-nav-list .dropdown-list-news,
+    .mobile-nav-list .dropdown-list-media {
+        position: absolute;        
+        bottom: 0; top: 100px;  right: 0;
+        width: 200px;
+        height: 75px;
+    }
+    
+    .mobile-nav-list .dropdown-list-event{
+        left: 140px;
+    }
+    
+    .mobile-nav-list .dropdown-list-news{
+        left: 300px;
+    }
+    
+    .mobile-nav-list .dropdown-list-about{
+        left: 625px;
+    }
+    
+    .mobile-nav-list .dropdown-list-media{
+        left: 785px;
+    }
 
     
 
