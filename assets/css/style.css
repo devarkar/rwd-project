@@ -206,6 +206,43 @@ footer div {
     color: white;
 }
 
+
+footer div.social-media{
+    display: flex;
+    flex-direction: column;
+    align-content: center;    
+    height: auto;
+    padding: 10px;
+/*    border: 1px solid red;*/
+}
+
+footer div.social-media h3{
+    font-size: 25px;
+    color: #c5181e;
+    line-height: 30px;
+    border-bottom: 1px solid white;
+    width: 160px;
+}
+
+footer div.social-media p{
+    font-size: 18px;
+    padding: 10px 0px 10px 0px;
+}
+
+footer div.social-media div{
+    margin: 0;
+    padding: 0;
+    align-self:center;
+    margin-bottom: -35px;
+}
+
+#center-wlc-logo-in-social-media{
+    align-self: center;
+    margin-bottom: -25px;
+}
+
+
+
 footer div.copyright{
     font-size: 1em;
 /*    border: 1px solid white;*/
@@ -216,6 +253,125 @@ footer div.copyright{
     margin: 0;
     padding: 5px; 
 }
+
+
+                            /* -------------------------------------
+
+                                    Footer Social Media Button 
+                                            /Mobile First/
+
+                            --------------------------------------*/
+
+
+/*Social Media Ghost Button*/
+
+.social-ghost-button-ytube{
+  display: inline-block;
+  width: 50px;
+  font-size: 30px;
+  padding: 8px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+}
+
+.social-ghost-button-ytube:hover,
+.social-ghost-button-ytube:active {
+  background-color: #b31217;
+  border-color: #b31217;
+  color: #fff;
+  transition: color 0.3s ease-in,
+              background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+
+
+.social-ghost-button-gplus{
+  display: inline-block;
+  width: 50px;
+  font-size: 30px;
+  padding: 8px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+}
+
+.social-ghost-button-gplus:hover,
+.social-ghost-button-gplus:active {
+  background-color: #d34836;
+  border-color: #d34836;
+  color: #fff;
+  transition: color 0.3s ease-in,
+              background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+
+.social-ghost-button-fb{
+  display: inline-block;
+  width: 50px;
+  font-size: 30px;
+  padding: 8px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+}
+
+.social-ghost-button-fb:hover,
+.social-ghost-button-fb:active {
+  background-color: #3B5998;
+  border-color: #3B5998;
+  color: #fff;
+  transition: color 0.3s ease-in,
+              background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+
+.social-ghost-button-twitter{
+  display: inline-block;
+  width: 50px;
+  font-size: 30px;
+  padding: 8px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+}
+
+.social-ghost-button-twitter:hover,
+.social-ghost-button-twitter:active {
+  background-color: #4099FF;
+  border-color: #4099FF;
+  color: #fff;
+  transition: color 0.3s ease-in,
+              background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+
+
+/*Social Media Ghost Button*/
 
 
 
