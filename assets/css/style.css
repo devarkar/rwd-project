@@ -5,12 +5,9 @@
     box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-}
-
-a:hover {
-    background: rgba(0,0,0,0.3);
+body{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC) repeat;
+    background-color: grey;
 }
 
 .page {
@@ -34,9 +31,8 @@ a:hover {
     background-repeat: no-repeat;
     background-size: 100% 80px;
 */
-/*    background-color: #5995da;*/
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC) repeat;
-    background-color: grey;
+    background-color: #333;
+    
     height: 80px;
 }
 
@@ -114,10 +110,10 @@ a:hover {
 /*    border: 1px solid green;*/
 }
 
-.mobile-nav-list {
+.mobile-nav-list {    
     display: none;
     height: auto;  
-    background-color: #eee;    
+    background-color: #757575;
 }
 
 .mobile-nav-list ul{
@@ -126,7 +122,8 @@ a:hover {
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
-    text-decoration: none;    
+    text-decoration: none;
+    background: #757575;
 }
 
 .mobile-nav-list.open {
@@ -134,10 +131,21 @@ a:hover {
 }
 
 .mobile-nav-list li{
-    flex: 3;
+    flex: 1;
     margin-bottom: 10px;
 }
 
+
+    .mobile-nav-list li{
+        text-align: center;
+    }
+    
+    .mobile-nav-list li a{
+        color: white;
+        font-size: 1.5em;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
 
 
 
@@ -149,7 +157,7 @@ a:hover {
 }
 
 /* Tablet Style */
-@media only screen and (min-width: 401px) and (max-width: 960px){
+@media only screen and (min-width: 401px) and (max-width: 1300px){
     body {
         background-color: #f5cf8e;
     }
@@ -166,15 +174,15 @@ a:hover {
     }
 }
 
-/* Desktop Style */
-@media only screen and (min-width: 961px){
+/* Desktop Style Default Width : 960px */
+@media only screen and (min-width: 1301px){
     body{
-        background-color: aqua;
+        
     }
     
     /*  ဒီ Code က အရမ်းကြီးတဲ့ Screen တွေကို အသေသတ်မှတ်ထားတာ ဖြစ်တယ်။  */
     .page{
-        width: 960px;
+        width: 1300px;
         margin: 0 auto;
     }
     
@@ -204,18 +212,20 @@ a:hover {
         width: auto;
     }
 */
-    .mobile-nav-list ul{
+    .mobile-nav-list ul{        
+        flex-direction: row;
+        
         width: 100%;
-        height: 50px;
+        height: 100px;
+        
         margin: 0;
         padding: 0;
-        flex-direction: row;        
     }
     
-    .mobile-nav-list li{
-        text-align: center;
-        flex-basis: 33.33%;
-        align-items: stretch;
-    }
+
+    
+
+
+    
     
 }

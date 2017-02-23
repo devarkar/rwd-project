@@ -15,7 +15,7 @@
                 <a class="header-logo" href="#">
                     <img src="assets/img/wlc-logo.png" />
                 </a>
-                <a class="mobile-btn" href="#">
+                <a class="mobile-btn" href="#" data-transition="slidedown">
                     &#x2630;
                 </a>                                                
             </div> <!-- section menu -->
@@ -44,7 +44,7 @@
                         <a href="#">Play Fantasy</a>
                     </li>
                     <li>
-                        <a href="#">Get Your Tickets</a>
+                        <a href="#">Get Tickets</a>
                     </li>
                 </ul>
             </div>
@@ -64,7 +64,7 @@
                         <source media="(min-width:401px)" 
                                 srcset="assets/img/photo-big.jpg 2000w,
                                         assets/img/photo-small.jpg 1000w"
-                                sizes="(min-width: 960px) 960px, 100vw" />
+                                sizes="(min-width: 1300px) 100vw, 100vw" />
                         
                         <source media="(max-width:400px)" 
                                 srcset="assets/img/photo-tall.jpg" />
@@ -107,11 +107,13 @@
         </div> <!-- page -->
         
         <!-- Include JS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script></script>
         <script src="assets/js/holder.js"></script>
         <script>
             $(function(){
                 $('.mobile-btn').on('click',function(){
+//                    $('.mobile-nav-list').fadeToggle().toggleClass('open');
                     $('.mobile-nav-list').toggleClass('open');
                 });
             });
