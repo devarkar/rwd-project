@@ -17,9 +17,37 @@
                 </a>
                 <a class="mobile-btn" href="#">
                     &#x2630;
-                </a>
-                
+                </a>                                                
             </div> <!-- section menu -->
+            
+            <div class="section mobile-nav-list">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Events</a>
+                    </li>
+                    <li>
+                        <a href="#">Headlines</a>
+                    </li>
+                    <li>
+                        <a href="#">Fighters</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Media</a>
+                    </li>
+                    <li>
+                        <a href="#">Play Fantasy</a>
+                    </li>
+                    <li>
+                        <a href="#">Get Your Tickets</a>
+                    </li>
+                </ul>
+            </div>
             
             <div class="section header">
                 <!--<img src="img/header.svg" />-->
@@ -77,6 +105,16 @@
             </div> <!-- section feature-3 -->
             
         </div> <!-- page -->
+        
+        <!-- Include JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
         <script src="assets/js/holder.js"></script>
+        <script>
+            $(function(){
+                $('.mobile-btn').on('click',function(){
+                    $('.mobile-nav-list').toggleClass('open');
+                });
+            });
+        </script>
     </body>
 </html>
