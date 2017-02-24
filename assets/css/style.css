@@ -437,6 +437,13 @@ footer div.copyright{
     }
 }
 
+                                /* -------------------------------------
+
+                                    Tablet View Media Query                                    
+
+                                --------------------------------------*/
+
+
 /* Tablet Style */
 @media only screen and (min-width: 401px) and (max-width: 1300px){
     body {
@@ -453,6 +460,52 @@ footer div.copyright{
     .menu .mobile-btn {
 /*        margin-left: 400px;*/
     }
+    
+    /* -------------------------------------
+
+                                        Desktop View Footer Section
+
+                                --------------------------------------*/
+    footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    footer div {        
+/*        border: 1px solid white;*/
+/*        width: 1300px;*/
+    }
+    
+    footer div.social-media,
+    footer div.address,
+    footer div.site-map
+    {
+        display: flex;
+        flex-direction: column;
+/*        align-items: center;*/
+        flex-basis: 33.33%;
+/*        border: 1px solid white;*/
+    }
+    
+    footer div.site-map{
+        align-items: flex-start;
+    }
+    
+    footer div.social-media div{
+        margin: 0;
+        padding: 0;
+        align-self:flex-start;
+        margin-bottom: -35px;
+    }
+    
+    #center-wlc-logo-in-social-media{
+        align-self: flex-start;
+    }
+    
+    footer div.copyright {
+        flex-basis: 100%;
+    }
+    
 }
 
 
@@ -559,5 +612,50 @@ footer div.copyright{
         height: 100px;
     }
 
+    
+                                /* -------------------------------------
+
+                                        Desktop View Footer Section
+
+                                --------------------------------------*/
+    footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    footer div {        
+/*        border: 1px solid white;*/
+/*        width: 1300px;*/
+    }
+    
+    footer div.social-media,
+    footer div.address,
+    footer div.site-map
+    {
+        display: flex;
+        flex-direction: column;
+/*        align-items: center;*/
+        flex-basis: 33.33%;
+/*        border: 1px solid white;*/
+    }
+    
+    footer div.site-map{
+        align-items: center;
+    }
+    
+    footer div.social-media div{
+        margin: 0;
+        padding: 0;
+        align-self:flex-start;
+        margin-bottom: -35px;
+    }
+    
+    #center-wlc-logo-in-social-media{
+        align-self: flex-start;
+    }
+    
+    footer div.copyright {
+        flex-basis: 100%;
+    }
     
 }
