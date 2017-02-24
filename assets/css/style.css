@@ -253,7 +253,7 @@ header{
 
 .ghost-btn {
     display: inline-block;
-    font-size: 2.5vw;
+    font-size: 5vw;
     width: auto;    
     padding: 20px;
     color: white;
@@ -638,6 +638,12 @@ footer div.copyright{
 /*        margin-left: 400px;*/
     }
     
+    
+    .ghost-btn {
+        font-size: 2.5vw;
+    }
+    
+    
                                 /* -------------------------------------
 
                                         Desktop View Footer Section
@@ -775,7 +781,9 @@ footer div.copyright{
     
 /*  Page Container Background Image for Large Desktop  */
     
-    
+    .ghost-btn {
+        font-size: 2.5vw;
+    }
     
     
                             /* -------------------------------------
