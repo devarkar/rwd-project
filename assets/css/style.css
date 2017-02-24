@@ -244,12 +244,41 @@ header{
 .text{
     color: #f2f2f2;
     font-size: 12px;
-    padding: 8px 12px;
+    padding: 0;
     position: absolute;
-    bottom: 8px;
+    bottom: 0px;
     width: 100%;
-    text-align: center;
+    text-align: right;
 }
+
+.ghost-btn {
+    display: inline-block;
+    font-size: 2.5vw;
+    width: auto;    
+    padding: 20px;
+    color: white;
+    background-color: #c5181e;
+    border: 1px solid #c5181e;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+}
+
+.ghost-btn:hover,
+.ghost-btn:active {
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    transition: color 0.3s ease-in,
+              background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+
+
+
 
 .numbertext {
     color: #f2f2f2;
