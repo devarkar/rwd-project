@@ -24,11 +24,11 @@ body{
 
 .page {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
 }
 
 .section {
-/*    border: 3px solid red;*/
+/*    border: 3px solid red;*/    
     width: 100%;
     height: 300px;
     display: flex;
@@ -154,7 +154,27 @@ body{
         transition: all 0.5s;
     }
 
+                            /* -------------------------------------
 
+                                    Header Section -> Mobile First
+
+                            --------------------------------------*/
+
+header{
+    background-color: #333;
+}
+
+                            /* -------------------------------------
+
+                                    Header Section -> Mobile First
+
+                            --------------------------------------*/
+
+#page-title{
+    height: 150px;
+    background-image: url(../img/page-head-bg.jpg);
+    background-position: center center;
+}
 
                             /* -------------------------------------
 
@@ -519,9 +539,7 @@ footer div.copyright{
 
 /* Desktop Style Default Width : 960px */
 @media only screen and (min-width: 1301px){
-    body{
-        
-    }
+    
     
     /*  ဒီ Code က အရမ်းကြီးတဲ့ Screen တွေကို အသေသတ်မှတ်ထားတာ ဖြစ်တယ်။  */
     .page{
@@ -598,12 +616,33 @@ footer div.copyright{
     }
 
     
+/*  Page Container Background Image for Large Desktop  */
+    
+    body{
+        background-image: url(../img/footer_lodyas.png);
+        background-repeat: repeat;
+        
+    }
+    
+    
                             /* -------------------------------------
 
                                     Chaning Menu and Header Height in
                                     Desktop View                   
 
                                 --------------------------------------*/
+    
+    #nav-list-container{
+        display: flex;
+        justify-content: center;
+        background-color: #757575;
+        width: 100%;
+    }
+    
+    #nav-list-container .mobile-nav-list {
+        width: 1300px;
+/*        border: 1px solid red;*/
+    }
     
     .menu {        
         height: 120px;

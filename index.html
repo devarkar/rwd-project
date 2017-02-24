@@ -10,8 +10,8 @@
     </head>
     
     <body>
-        <div class="page">
-            
+        
+        <header>
             <div class="section menu">
                 
                 <a class="header-logo" href="#">
@@ -20,8 +20,10 @@
                 <a class="mobile-btn" href="#" data-transition="slidedown">
                     &#x2630;
                 </a>                                                
-            </div> <!-- section menu -->
-            
+            </div>
+        </header>
+        
+        <div id="nav-list-container">
             <div class="section mobile-nav-list">
                 <ul>
                     <li>
@@ -95,34 +97,46 @@
                     </li>
                 </ul>
             </div>
-            
-            <div class="section header">
-                <!--<img src="img/header.svg" />-->
-                
-                <div class="photo">
+        </div>
+        
+        
+        <div class="section header">
+            <!--<img src="img/header.svg" />-->
+
+            <div class="photo">
 <!--
-                    <img src="img/photo-small.jpg"
-                         srcset='img/photo-big.jpg 2000w,
-                                 img/photo-small.jpg 1000w'
-                         sizes='(min-width: 960px) 960px, 100vw' />
+                <img src="img/photo-small.jpg"
+                     srcset='img/photo-big.jpg 2000w,
+                             img/photo-small.jpg 1000w'
+                     sizes='(min-width: 960px) 960px, 100vw' />
 -->
-                    <picture>
-                        
-                        <source media="(min-width:401px)" 
-                                srcset="assets/img/2.jpg 2000w,
-                                        assets/img/2.jpg 1000w"
-                                sizes="(min-width: 1401px) 100vw, 100vw" />
-                        
-                        <source media="(max-width:400px)" 
-                                srcset="assets/img/photo-tall.jpg" />
-                        
-                        <img src="assets/img/photo-small.jpg" />
-                        
-                    </picture>
-                    
-                </div>
-                
-            </div> <!-- section header -->
+                <picture>
+
+                    <source media="(min-width:401px)" 
+                            srcset="assets/img/2.jpg 2000w,
+                                    assets/img/2.jpg 1000w"
+                            sizes="(min-width: 1401px) 100vw, 100vw" />
+
+                    <source media="(max-width:400px)" 
+                            srcset="assets/img/photo-tall.jpg" />
+
+                    <img src="assets/img/photo-small.jpg" />
+
+                </picture>
+
+            </div>
+
+        </div> <!-- section header -->
+        
+        <div id="page-title">
+            page title!
+        </div>
+        
+        <div id="foo" class="page">                        
+            
+            
+            
+            
             
             <div class="section content">
                 
