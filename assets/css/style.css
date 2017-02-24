@@ -536,7 +536,8 @@ footer div.copyright{
     }
     
     .header {
-        height: 400px;
+        background-color: red;
+        min-height: 400px;
     }
     
     /*  ဒီ code က Features တွေကို ပေါ်တင်ပြီး Content နဲ့ Sign Up ကို အောက်ချ  */
