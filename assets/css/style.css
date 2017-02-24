@@ -24,7 +24,8 @@ body{
 
 .page {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    background: rgba(255,255,255,0.5);
 }
 
 .section {
@@ -47,7 +48,7 @@ body{
 }
 
 .content {
-    background-color: #eaedf0;
+/*    background-color: #eaedf0;*/
     height: 600px;
 }
 
@@ -171,9 +172,21 @@ header{
                             --------------------------------------*/
 
 #page-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 150px;
-    background-image: url(../img/page-head-bg.jpg);
-    background-position: center center;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ), url(../img/page-head-bg.jpg);
+    background-position: center center;    
+    background-repeat: no-repeat;  
+    color: #c5181e;
+    font-size: 2em;
+}
+
+#page-title h1{
 }
 
                             /* -------------------------------------
