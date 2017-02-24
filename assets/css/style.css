@@ -17,10 +17,18 @@
     font-weight: lighter;
 }
 
+/*
 body{
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC) repeat;
     background-color: grey;
 }
+*/
+
+    body{
+        background-image: url(../img/footer_lodyas.png);
+        background-repeat: repeat;
+        
+    }
 
 .page {
     display: flex;
@@ -190,9 +198,115 @@ header{
 #page-title h1{
 }
 
+
                             /* -------------------------------------
 
-                                        Drop Down List
+                            Home Page Image Slider Section -> Mobile First
+
+                            --------------------------------------*/
+.slideshow-container {
+/*    max-width: 1000px;*/
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides img{
+    width: 100%;
+    display: block;
+    
+/*    display: none;*/
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+#dot-container{
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align:center;     
+    margin-top:-20px;
+    z-index: 99999;
+}
+
+.dot {
+        
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #717171;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #c5181e;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+                            /* -------------------------------------
+
+                                        Drop Down List Mobile First
 
                             --------------------------------------*/
 .mobile-nav-list .dropdown-list-event, 
@@ -207,7 +321,7 @@ header{
 .mobile-nav-list .dropdown-list-media.open,
 .mobile-nav-list .dropdown-list-about.open {
     display: block;
-    
+    z-index: 9999999;
 }
 
 .mobile-nav-list .dropdown-list-event li a,
@@ -495,7 +609,7 @@ footer div.copyright{
 /*        margin-left: 400px;*/
     }
     
-    /* -------------------------------------
+                                /* -------------------------------------
 
                                         Desktop View Footer Section
 
@@ -632,11 +746,7 @@ footer div.copyright{
     
 /*  Page Container Background Image for Large Desktop  */
     
-    body{
-        background-image: url(../img/footer_lodyas.png);
-        background-repeat: repeat;
-        
-    }
+    
     
     
                             /* -------------------------------------

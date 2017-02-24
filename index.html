@@ -10,6 +10,11 @@
     </head>
     
     <body>
+
+        
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++
+       |               Navigation Header                 |
+       ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         
         <header>
             <div class="section menu">
@@ -22,6 +27,10 @@
                 </a>                                                
             </div>
         </header>
+        
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++
+       |               Output Navigation List            |
+       ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         
         <div id="nav-list-container">
             <div class="section mobile-nav-list">
@@ -98,18 +107,79 @@
                 </ul>
             </div>
         </div>
+
         
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++
+       |               Home Page Image Slider           |
+       ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">
+                    1 / 2
+                </div>
+                <picture>
+
+                    <source media="(min-width:401px)" 
+                            srcset="assets/img/2.jpg 2000w,
+                                    assets/img/2.jpg 1000w"
+                            sizes="(min-width: 1401px) 100vw, 100vw" />
+
+                    <source media="(max-width:400px)" 
+                            srcset="assets/img/photo-tall.jpg" />
+
+                    <img src="assets/img/photo-small.jpg" />
+
+                </picture>
+                <div class="text">
+                    Caption Text
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">
+                    2 / 2
+                </div>
+                <picture>
+
+                    <source media="(min-width:401px)" 
+                            srcset="assets/img/AGD-Bank-Lekkha-Moun-Fight.jpg 2000w,
+                                    assets/img/AGD-Bank-Lekkha-Moun-Fight.jpg 1000w"
+                            sizes="(min-width: 1401px) 100vw, 100vw" />
+
+                    <source media="(max-width:400px)" 
+                            srcset="assets/img/photo-tall.jpg" />
+
+                    <img src="assets/img/photo-small.jpg" />
+
+                </picture>
+                <div class="text">
+                    Caption Text
+                </div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            <div id="dot-container">
+            <span class="dot" onclick="currentSlide(1)">.</span>
+            <span class="dot" onclick="currentSlide(2)">.</span>
+<!--            <span class="dot" onclick="currentSlide(3)"></span>-->
+        </div>
+            
+        </div>        
+        
+        <!--
         <div class="section header">
-            <!--<img src="img/header.svg" />-->
+            <img src="img/header.svg" />
 
             <div class="photo">
-<!--
+
                 <img src="img/photo-small.jpg"
                      srcset='img/photo-big.jpg 2000w,
                              img/photo-small.jpg 1000w'
                      sizes='(min-width: 960px) 960px, 100vw' />
--->
+
                 <picture>
 
                     <source media="(min-width:401px)" 
@@ -126,13 +196,13 @@
 
             </div>
 
-        </div> <!-- section header -->
+        </div> --> <!-- section header -->
         
         <div id="page-title">
             <h1>Home</h1>            
         </div>
         
-        <div id="foo" class="page">                        
+        <div class="page">                        
             
             
             
@@ -253,6 +323,37 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
         <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script></script>
         <script src="assets/js/holder.js"></script>
+        
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+        </script>
+
+        
         <script>
             $(function(){
                 $('.mobile-btn').on('click',function(){
