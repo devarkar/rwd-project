@@ -17,15 +17,16 @@
        |               Navigation Header                 |
        ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         
-        <header>
+        <header>            
             <div class="section menu">
-                
-                <a class="header-logo" href="#">
-                    <img src="assets/img/wlc-logo.png" />
-                </a>
-                <a class="mobile-btn" href="#" data-transition="slidedown">
-                    &#x2630;
-                </a>                                                
+                    
+                    <a class="header-logo" href="#">
+                        <img src="assets/img/wlc-logo.png" />
+                    </a>
+                    <a class="mobile-btn" href="#" data-transition="slidedown">
+                        &#x2630;
+                    </a>
+                    <div id="hexagon"></div>
             </div>
         </header>
         
@@ -241,7 +242,7 @@
                     
                     <div class="home-fighter-slider">
                         <input id="rad1" type="radio" name="rad" checked>
-                        <section style="background: #fff;">
+                        <section class="fighter-profile-slider" style="background: #fff;">
                           <div class="event-card-img">
                             
                             <picture>
@@ -272,7 +273,7 @@
                         </section>
                         
                         <input id="rad2" type="radio" name="rad">
-                        <section style="background: #fff;">
+                        <section class="fighter-profile-slider" style="background: #fff;">
                           <div class="event-card-img">
                             
                             <picture>
@@ -308,6 +309,39 @@
                 </div>
                 
             </div>
+            
+            
+             <!-- +++++++++++++++++++++++++++++++++++++++++++++++++
+            |               Home Page News Section                |
+            ++++++++++++++++++++++++++++++++++++++++++++++++++ -->  
+            
+            <div id="home-page-container">
+                <div class="section-title">
+                    <h1>Headlines</h1>
+                    <div class="title-line"></div>
+                </div>
+                
+                
+                
+                
+                    
+                
+                
+                
+            </div>
+            
+            
+             <!-- +++++++++++++++++++++++++++++++++++++++++++++++++
+            |               Home Page Partners Section           |
+            ++++++++++++++++++++++++++++++++++++++++++++++++++ -->  
+            
+            <div id="home-page-container">
+                <div class="section-title">
+                    <h1>PARTNERS</h1>
+                    <div class="title-line"></div>
+                </div>                
+            </div>
+            
             
             <div class="section content">
                 
@@ -487,6 +521,10 @@
         </script>
         <script>
           w3.slideshow(".nature", 8000);
+        </script>
+        
+        <script>
+          w3.slideshow(".fighter-profile-slider", 8000);
         </script>
         
     </body>
