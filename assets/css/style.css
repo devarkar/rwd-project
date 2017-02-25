@@ -37,7 +37,7 @@ body{
 .page {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid red;
+/*    border: 1px solid red;*/
 /*    background: rgba(0,0,0,0.1);*/
 }
 
@@ -345,7 +345,9 @@ header{
 
 
 .home-event-and-fighter-card-container{    
-    border: 1px solid white;
+/*    border: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
     height: auto;
     width: 100%;
 }
@@ -402,8 +404,64 @@ header{
 }
 
 .home-fighter-card-container{
+    min-height: 400px;
+    margin: 15px;
     border: 1px solid green;
+    /*  google material card  */
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+
+
+
+.home-fighter-card-container section {
+    display: none;    
+    flex-direction: column;
+    background: #449df5;
+    color: #000;
+    text-align: center;
+}
+
+.home-fighter-card-container section .event-card-img-caption{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.home-fighter-card-container section .data{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-fighter-card-container section .data p{
+    font-weight: lighter;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.home-fighter-card-container section .data p > .ghost-btn{
+    font-size: 1em;
+    margin: 2px;
+    padding: 10px;
+}
+
+.home-fighter-card-container section label:nth-child(odd) { right: 120px; }
+
+.home-fighter-card-container section label:nth-child(even) { left: 120px; }
+
+.home-fighter-card-container section > i {
+  font-size: 6em !important;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+input[type="radio"] { display: none; }
+
+input[type="radio"]:checked + section { display: flex; }
+
 
                             /* -------------------------------------
 
@@ -929,6 +987,21 @@ footer div.copyright{
     
     footer div.copyright {
         flex-basis: 100%;
+    }
+    
+    .home-event-and-fighter-card-container{
+        flex-direction: row;
+    }
+    
+    .home-event-and-fighter-card-container .home-event-card-container{
+        flex: 2;
+        flex-basis: 800px;
+    }
+    
+    .home-event-and-fighter-card-container .home-fighter-card-container {
+        flex: 1;
+        flex-basis: 400px;
+        height: auto;
     }
     
 }
