@@ -595,7 +595,7 @@ input[type="radio"]:checked + section { display: -webkit-box; display: -ms-flexb
                             --------------------------------------*/
 #home-page-container{
     width: 100%;
-    height: 300px;    
+    height: auto;    
     border: 1px solid red;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -633,6 +633,53 @@ input[type="radio"]:checked + section { display: -webkit-box; display: -ms-flexb
 	border-bottom: 50px solid red;
 	border-left: 100px solid transparent;
 }
+
+.home-news-container{
+    display: flex;
+    flex-wrap: wrap;
+/*    border: 1px solid black;*/
+    margin: 15px;
+}
+
+.home-news-container .home-news{
+/*    border: 1px solid red;*/
+    padding: 10px;
+    margin-bottom: 10px;
+    /*  google material design card  */
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.home-news-container .home-news a{
+    text-decoration: none;
+    color: black;
+}
+
+.home-news-container .home-news a:hover,
+.home-news-container .home-news a:active {
+    text-decoration: underline;
+    -webkit-text-decoration-color: #000;
+    -moz-text-decoration-color: #000;  /* vendor prefix not required as of V36 */
+    text-decoration-color: #000;    
+  -webkit-transition: color 0.3s ease-in,
+            text-decoration-color 0.3s ease-in,
+            text-decoration 0.3s ease-in;
+              
+  transition: color 0.3s ease-in,
+            text-decoration-color 0.3s ease-in,
+            text-decoration 0.3s ease-in;              
+}
+
+.home-news-container .home-news h1{
+    color: #c5181e;    
+}
+
+.home-news-container .home-news p{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+}
+
+
 
 
 
