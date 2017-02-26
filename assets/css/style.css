@@ -1320,6 +1320,18 @@ footer div.copyright{
     #about-wlc-title.section-title .title-line{
         flex-basis: 65%;
     }
+    
+    
+    /* modify about AGD LMF title */
+    #about-agd-title.section-title h1{
+        flex-basis: 100%;
+    }
+    
+    #about-agd-title.section-title .title-line{
+        flex-basis: 50%;
+    }
+    
+    
 
     
                             /* -------------------------------------
@@ -1383,7 +1395,21 @@ footer div.copyright{
         padding: 30px;
     }
     
+    .home-event-and-fighter-card-container{
+        
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
     
+    .home-event-and-fighter-card-container .home-event-card-container{
+        flex: ;
+    }
+    
+    .home-event-and-fighter-card-container .home-fighter-card-container {
+        flex: 1;
+    }
 }
 
 /* --------------------------------------------------------------------------------------------------------------- */
@@ -1592,6 +1618,7 @@ footer div.copyright{
     }
     
     .home-event-and-fighter-card-container{
+        
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1698,6 +1725,15 @@ footer div.copyright{
     
     #about-wlc-title.section-title .title-line{
         flex-basis: 85%;
+    }
+    
+    /* modify about AGD LMF title */
+    #about-agd-title.section-title h1{
+        flex-basis: 45%;
+    }
+    
+    #about-agd-title.section-title .title-line{
+        flex-basis: 55%;
     }
 
     
