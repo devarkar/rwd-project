@@ -60,9 +60,17 @@ Tablet Style
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {    
     
-    .fighter-card{
+    /*Feature Fighter*/
+    .fighter-card{        
         margin: 5px;
         flex-basis: calc(50% - 10px);
+    }
+    
+    /*WLC Fighter*/
+    #wlc-fighter-list .fighter-card{
+        border: 2px solid green;
+        margin: 5px;
+        flex-basis: calc(33.33% - 10px);
     }
 }
 
@@ -72,8 +80,16 @@ Desktop Style
 ------------------------------*/
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-    .fighter-card{        
+    
+    /*Feature Fighter*/
+    .fighter-card{
         margin: 5px;
         flex-basis: calc(25% - 10px);
+    }
+    
+    /*WLC Fighter*/
+    #wlc-fighter-list .fighter-card{        
+        margin: 5px;
+        flex-basis: calc(20% - 10px);
     }
 }
