@@ -597,7 +597,7 @@ input[type="radio"]:checked + section { display: -webkit-box; display: -ms-flexb
 #home-page-container{
     width: 100%;
     height: auto;    
-    border: 1px solid red;
+/*    border: 1px solid red;*/
     margin-top: 25px;
     margin-bottom: 25px;
 }
@@ -726,7 +726,7 @@ input[type="radio"]:checked + section { display: -webkit-box; display: -ms-flexb
     display: flex;
     flex-wrap: wrap;
     margin: 15px;
-    border: 1px solid black;
+/*    border: 1px solid black;*/
 }
 
 .about-wlc-container .about-wlc-section{

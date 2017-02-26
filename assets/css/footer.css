@@ -74,6 +74,8 @@ footer div.address h4{
 }
 
 footer div.address p{
+    font-family: "Accidental Presidency V2 V2";
+    font-weight: lighter;
     font-size: 18px;
     padding: 10px 0px 10px 0px;
 }
@@ -105,6 +107,8 @@ footer div.social-media h3{
 }
 
 footer div.social-media p{
+    font-family: "Accidental Presidency V2 V2";
+    font-weight: lighter;
     font-size: 18px;
     padding: 10px 0px 10px 0px;
 }

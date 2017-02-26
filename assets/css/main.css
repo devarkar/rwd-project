@@ -8,6 +8,123 @@
 
 
 /*------------------------------
+WLC Events Page
+Moible First
+------------------------------*/
+.wlc-upcomming-event-container{
+/*    border: 2px solid black;*/
+    margin: 15px;
+}
+
+.wlc-upcomming-event{
+    display: flex;
+    flex-wrap: wrap;
+    /*  google material design card  */
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.wlc-upcomming-photo img{
+    width: 100%;
+    display: block;
+}
+
+.wlc-upcomming-data{
+    text-align: center;
+    text-transform: uppercase;
+/*    border: 2px solid red;*/
+/*    margin: 5px;*/
+    width: 100%;
+}
+
+.wlc-upcomming-data h1{
+    color: #c5181e;
+}
+
+.wlc-upcomming-data a{
+    font-size: 1.5em;
+}
+
+.wlc-upcomming-event-photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.wlc-upcomming-event-photo .photos img{
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    /*  google material design card  */
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+/*------------------------------
+WLC Events Page
+Tablet Style
+------------------------------*/
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {    
+    /*WLC Event Card*/
+    .wlc-upcomming-event{
+        flex-wrap: wrap;
+    }
+    
+    .wlc-upcomming-data a{
+        font-size: 1.5em;
+    }
+    /*Event VS Photo*/
+    .wlc-upcomming-event-photo .photos {
+        margin-bottom: 0;
+        margin: 5px;
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+/*------------------------------
+WLC Events Page
+Desktop Style
+------------------------------*/
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    
+    /*WLC Event Card*/    
+    .wlc-upcomming-event{
+        flex-wrap: nowrap;
+    }
+    
+    .wlc-upcomming-photo img{
+        height: 100%;
+        display: block;
+    }
+    
+    .wlc-upcomming-data{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .wlc-upcomming-data > * {
+        width: 100%;
+    }
+    
+    .wlc-upcomming-data a{
+        align-self: flex-end;
+        font-size: 1.5em;
+    }
+    
+    /*Event VS Photo*/
+    .wlc-upcomming-event-photo .photos {        
+        margin: 5px;
+        flex-basis: calc(33.33% - 10px);        
+    }
+}
+
+
+
+/*------------------------------
 Fighter Page
 Moible First
 ------------------------------*/
