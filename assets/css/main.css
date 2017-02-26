@@ -1,0 +1,79 @@
+@import "normalize.css";
+@import "font.css";
+@import "btn.css";
+@import "header.css";
+@import "eimon-title.css";
+@import "footer.css";
+@import "media-query.css";
+
+
+/*------------------------------
+Fighter Page
+Moible First
+------------------------------*/
+.feature-fighter-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;    
+}
+
+.feature-fighter-container a{
+    font-size: 1.5em;
+}
+
+.fighter-card{
+    margin-bottom: 15px;
+    /*  google material design card  */
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.fighter-card-img{
+ position: relative;
+}
+
+.fighter-card-caption{
+    width: 100%;
+    /*color: #c5181e;*/
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    bottom: 0px;
+    padding: 15px;
+    /*left: 16px;*/
+    font-size: 1.5em;
+    
+}
+
+.fighter-card-img img{
+    width: 100%;
+    display: block;
+}
+
+/*------------------------------
+Fighter Page
+Tablet Style
+------------------------------*/
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {    
+    
+    .fighter-card{
+        margin: 5px;
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+/*------------------------------
+Fighter Page
+Desktop Style
+------------------------------*/
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .fighter-card{        
+        margin: 5px;
+        flex-basis: calc(25% - 10px);
+    }
+}

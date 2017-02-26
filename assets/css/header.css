@@ -1,0 +1,314 @@
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Accidental Presidency V2 V2";
+    font-weight: lighter;
+}
+
+/*
+body{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQYV2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXQdISfAAAAAElFTkSuQmCC) repeat;
+    background-color: grey;
+}
+*/
+
+    body{
+        background: -webkit-linear-gradient(
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0.1)
+        ), url(../img/footer_lodyas.png);
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0.1)
+        ), url(../img/footer_lodyas.png);
+/*        background-image: url(../img/footer_lodyas.png);*/
+        background-repeat: repeat;
+        
+    }
+
+.page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+/*    border: 1px solid red;*/
+/*    background: rgba(0,0,0,0.1);*/
+}
+
+.section {
+/*    border: 3px solid red;*/    
+    width: 100%;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+.menu {
+    background-color: #333;
+    height: 80px;
+}
+
+.header {
+    background-color: #b2d6ff;
+}
+
+.content {
+/*    background-color: #eaedf0;*/
+    height: 600px;
+}
+
+.sign-up {
+    background-color: #d6e9fe;
+}
+
+.feature-1 {
+    background-color: #f5cf8e;
+}
+
+.feature-2 {
+    background-color: #f09a9d;
+}
+
+.feature-3 {
+    background-color: #c8c6fa;
+}
+
+/*
+    .illustration {
+        width: 100%;
+    }
+*/
+
+.illustration img{
+    width: 100%;
+    display: block;
+}
+
+.header {
+    height: auto;
+    -webkit-box-pack: inherit;
+    -ms-flex-pack: inherit;
+    justify-content: inherit;
+    -webkit-box-align: inherit;
+    -ms-flex-align: inherit;
+    align-items: inherit;
+}
+
+.photo img {
+    width: 100%;
+    display: block;
+}
+
+.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100px;
+/*    border: 2px solid red;*/
+}
+
+.menu .header-logo {
+
+}
+
+.menu #hexagon {
+	width: 100%;
+	height: 45px;
+	background: white;
+    margin: auto;
+    position: absolute;
+    top: 0;left: 0; right: 0; bottom: 0;
+}
+.menu #hexagon:before {
+	content: "";
+	position: absolute;
+	top: -25px;
+    margin: 0 auto;
+	left: 0;
+    right: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 25px solid white;
+}
+.menu #hexagon:after {
+	content: "";
+	position: absolute;    
+	bottom: -25px;
+    margin: 0 auto;
+	left: 0;
+    right: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 25px solid white;
+}
+
+.menu .header-logo img {
+/*    border: 1px solid red;*/
+    padding: 0px;
+    padding-left: 10px;
+    margin: auto;
+    position: absolute;
+    top: 0;left: 0; right: 0; bottom: 0;
+/*    justify-content: center;*/
+    height: 80px;
+    z-index: 1;
+}
+
+.mobile-btn {
+    position: absolute;
+
+    top: 25%;
+    bottom: 25% + 10px;
+    right: 0;
+    margin-right: 10px;
+    font-size: 50px;
+    color: black;
+    text-decoration: none;
+    z-index: 9;
+/*    margin-left: 10px;*/
+}
+
+.mobile-nav-list {    
+    display: none;
+    height: auto;  
+    background-color: #757575;
+}
+
+.mobile-nav-list ul{
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 10px;
+    text-decoration: none;
+    background: #757575;
+    text-transform: uppercase;
+}
+
+.mobile-nav-list.open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.mobile-nav-list li{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+
+    .mobile-nav-list li{
+        text-align: center;
+    }
+    
+    .mobile-nav-list li a{
+        color: white;
+        font-size: 1.5em;
+        text-decoration: none;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+                            /* -------------------------------------
+
+                                    Header Section -> Mobile First
+
+                            --------------------------------------*/
+
+header{
+    background-color: #333;
+}
+
+
+
+
+                            /* -------------------------------------
+
+                                        Drop Down List Mobile First
+
+                            --------------------------------------*/
+.mobile-nav-list .dropdown-list-event, 
+.mobile-nav-list .dropdown-list-about, 
+.mobile-nav-list .dropdown-list-news,
+.mobile-nav-list .dropdown-list-media {
+    display: none;
+}
+
+.mobile-nav-list .dropdown-list-event.open,
+.mobile-nav-list .dropdown-list-news.open,
+.mobile-nav-list .dropdown-list-media.open,
+.mobile-nav-list .dropdown-list-about.open {
+    display: block;
+    z-index: 9999999;
+}
+
+.mobile-nav-list .dropdown-list-event li a,
+.mobile-nav-list .dropdown-list-about li a,
+.mobile-nav-list .dropdown-list-news li a,
+.mobile-nav-list .dropdown-list-media li a {
+    color: #000;
+    display: block;
+}
+
+
+
+                            /* -------------------------------------
+
+                                    Header Section -> Mobile First
+
+                            --------------------------------------*/
+
+#page-title{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 150px;
+    background: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ), url(../img/page-head-bg.jpg);
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ), url(../img/page-head-bg.jpg);
+    background-position: center center;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #c5181e;
+    font-size: 2em;
+}

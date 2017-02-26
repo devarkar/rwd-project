@@ -1,0 +1,166 @@
+/* Main Button */
+.ghost-btn {
+    display: inline-block;
+    font-size: 5vw;
+    text-transform: uppercase;
+    width: auto;    
+    padding: 20px;
+    color: white;
+    background-color: #c5181e;
+    border: 1px solid #c5181e;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    -webkit-transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+    transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+}
+
+.ghost-btn:hover,
+.ghost-btn:active {
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    -webkit-transition: color 0.3s ease-in,
+              background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+    transition: color 0.3s ease-in,
+              background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+
+
+/* Social Media Button*/
+
+.social-ghost-button-ytube{
+  display: inline-block;
+  width: 50px;
+  font-size: 30px;    
+  padding: 8px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+}
+
+.social-ghost-button-ytube:hover,
+.social-ghost-button-ytube:active {
+  background-color: #b31217;
+  border-color: #b31217;
+  color: #fff;
+  -webkit-transition: color 0.3s ease-in,
+              background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+  transition: color 0.3s ease-in,
+              background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+
+
+.social-ghost-button-gplus{
+  display: inline-block;
+  width: 50px;
+  font-size: 30px;
+  padding: 8px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+}
+
+.social-ghost-button-gplus:hover,
+.social-ghost-button-gplus:active {
+  background-color: #d34836;
+  border-color: #d34836;
+  color: #fff;
+  -webkit-transition: color 0.3s ease-in,
+              background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+  transition: color 0.3s ease-in,
+              background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+
+.social-ghost-button-fb{
+  display: inline-block;
+  width: 50px;
+  font-size: 30px;
+  padding: 8px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+}
+
+.social-ghost-button-fb:hover,
+.social-ghost-button-fb:active {
+  background-color: #3B5998;
+  border-color: #3B5998;
+  color: #fff;
+  -webkit-transition: color 0.3s ease-in,
+              background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+  transition: color 0.3s ease-in,
+              background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+
+.social-ghost-button-twitter{
+  display: inline-block;
+  width: 50px;
+  font-size: 30px;
+  padding: 8px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+}
+
+.social-ghost-button-twitter:hover,
+.social-ghost-button-twitter:active {
+  background-color: #4099FF;
+  border-color: #4099FF;
+  color: #fff;
+  -webkit-transition: color 0.3s ease-in,
+              background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+  transition: color 0.3s ease-in,
+              background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+

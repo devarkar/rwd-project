@@ -1,0 +1,714 @@
+
+/* Mobile Style */
+@media only screen and (max-width:400px){
+    body{
+        background-color: #fff;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+/*Special Case of Media Query*/
+@media only screen and (min-width: 401px) and (max-width: 750px){
+
+                            /* -------------------------------------
+
+                            About WLC Page Section -> Mobile First
+
+                            --------------------------------------*/
+
+.about-wlc-container .about-wlc-section{
+    display: flex;
+    flex-direction: column;    
+    margin-bottom: 15px;
+    padding: 0px;
+    min-height: 300px;
+    /*  google material design card  */
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+    .about-wlc-section .photo-container{
+/*
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 300px;
+*/
+        flex: 1;        
+        
+    }
+    
+    .about-wlc-section .about-wlc-data{
+        
+        
+    }
+    
+/* photo container */
+.about-wlc-section .photo-container img{
+    width: 100%;
+    height: 100%;
+    display: block;    
+}
+    
+
+    
+    .about-wlc-container .about-wlc-section .about-wlc-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 2;
+        padding: 30px;
+    }
+    
+    
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+
+                                /* -------------------------------------
+
+                                    Tablet View Media Query                                    
+
+                                --------------------------------------*/
+
+
+/* Tablet Style */
+@media only screen and (min-width: 751px) and (max-width: 1300px){
+    body {
+        background-color: #f5cf8e;
+    }
+    
+    .sign-up,
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+        width: 50%;
+    }
+    
+    .menu .mobile-btn {
+/*        margin-left: 400px;*/
+    }
+    
+    
+    .ghost-btn {
+        font-size: 2.5vw;
+    }
+    
+    
+                                /* -------------------------------------
+
+                                        Desktop View Footer Section
+
+                                --------------------------------------*/
+    footer{
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    
+    footer div {        
+/*        border: 1px solid white;*/
+/*        width: 1300px;*/
+    }
+    
+    footer div.social-media,
+    footer div.address,
+    footer div.site-map
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+/*        align-items: center;*/
+        -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+/*        border: 1px solid white;*/
+    }
+    
+    footer div.site-map{
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+    
+    footer div.social-media div{
+        margin: 0;
+        padding: 0;
+        -ms-flex-item-align:start;
+        align-self:flex-start;
+        margin-bottom: -35px;
+    }
+    
+    #center-wlc-logo-in-social-media{
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+    }
+    
+    footer div.copyright {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+    
+    /*  Home Page ရဲ့ Main Event Card ကို ပြင်ဆင်  */    
+
+    .event-action {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .home-fighter-card-container section .data{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+        .home-fighter-card-container section .data p{
+
+            -ms-flex-preferred-size: 50%;
+
+            flex-basis: 50%;
+/*            border: 1px solid red;*/
+        }
+
+        .home-fighter-card-container section .data p:last-child {        
+            -ms-flex-preferred-size: 100%;        
+            flex-basis: 100%;
+        }    
+
+    
+                            /* -------------------------------------
+
+                            Home Page News & Partner Section -> Tablet
+
+                            --------------------------------------*/
+
+
+.section-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 15px;
+/*    border: 1px solid white;*/
+}
+
+.section-title h1{
+    text-transform: uppercase;
+    font-size: 3.5em;
+    color: #c5181e;
+    -ms-flex-preferred-size: 10%;
+    flex-basis: 10%;
+/*    border: 1px solid black;*/
+}
+
+.section-title .title-line {
+    display: block;
+    -ms-flex-preferred-size: 90%;
+    flex-basis: 90%;
+	width: 100%;
+	height: 0px;
+	border-bottom: 50px solid #c5181e;
+	border-left: 100px solid transparent;
+/*    border: 1px solid white;*/
+}
+    
+/* modify about wlc title */
+    #about-wlc-title.section-title h1{
+        flex-basis: 35%;
+    }
+    
+    #about-wlc-title.section-title .title-line{
+        flex-basis: 65%;
+    }
+    
+    
+    /* modify about AGD LMF title */
+    #about-agd-title.section-title h1{
+        flex-basis: 100%;
+    }
+    
+    #about-agd-title.section-title .title-line{
+        flex-basis: 50%;
+    }
+    
+    
+
+    
+                            /* -------------------------------------
+
+                            About WLC Page Section -> Mobile First
+
+                            --------------------------------------*/
+
+.about-wlc-container .about-wlc-section{
+    display: flex;
+    flex-direction: row;    
+    margin-bottom: 15px;
+    padding: 0px;
+    min-height: 300px;
+    /*  google material design card  */
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+    .about-wlc-section .photo-container{
+/*
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 300px;
+*/
+        flex: 1;        
+        
+    }
+    
+    .about-wlc-section .about-wlc-data{
+        
+        
+    }
+    
+/* photo container */
+.about-wlc-section .photo-container img{
+    width: 100%;
+    height: 100%;
+    display: block;    
+}
+    
+    .about-wlc-section .photo-container.order2{        
+        order: 1;
+    }
+    
+    .about-wlc-section .photo-container.order4{
+        order: 1;
+    }
+    
+    .about-wlc-section .photo-container.order6{
+        order: 1;
+    }
+
+    
+    .about-wlc-container .about-wlc-section .about-wlc-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 2;
+        padding: 30px;
+    }
+    
+    .home-event-and-fighter-card-container{
+        
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    
+    .home-event-and-fighter-card-container .home-event-card-container{
+        flex: ;
+    }
+    
+    .home-event-and-fighter-card-container .home-fighter-card-container {
+        flex: 1;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+                                /* -------------------------------------
+
+                                    Desktop View Media Query                                    
+
+                                --------------------------------------*/
+
+
+/* Desktop Style Default Width : 960px */
+@media only screen and (min-width: 1301px){
+    
+    
+    /*  ဒီ Code က အရမ်းကြီးတဲ့ Screen တွေကို အသေသတ်မှတ်ထားတာ ဖြစ်တယ်။  */
+    .page{
+        width: 1300px;
+        margin: 0 auto;
+    }
+    
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+        width: 33.33%;
+    }
+    
+    .header {        
+        min-height: 400px;
+/*        border: 2px solid red;*/
+    }
+    
+    /*  ဒီ code က Features တွေကို ပေါ်တင်ပြီး Content နဲ့ Sign Up ကို အောက်ချ  */
+    
+    .sign-up {
+        height: 200px;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    
+    .content {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+    
+/*
+    .illustration {
+        width: auto;
+    }
+*/
+    .mobile-nav-list ul{        
+        -webkit-box-orient: horizontal;        
+        -webkit-box-direction: normal;        
+        -ms-flex-direction: row;        
+        flex-direction: row;
+        
+        width: 100%;
+        height: 100px;
+        
+        margin: 0;
+        padding: 0;
+        
+        position: relative;
+/*        border: 3px solid red;*/
+    }
+    
+    
+    /*  Desktop View မှာ Nav က ကောင်းကောင်းပေါ်ဖို့ Modify ဒီမှာ လုပ်ထား  */
+    .mobile-nav-list .dropdown-list-event,
+    .mobile-nav-list .dropdown-list-about,
+    .mobile-nav-list .dropdown-list-news,
+    .mobile-nav-list .dropdown-list-media {
+        position: absolute;        
+        bottom: 0; top: 100px;  right: 0;
+        width: 200px;
+        height: 75px;
+    }
+    
+    .mobile-nav-list .dropdown-list-event{
+        left: 140px;
+    }
+    
+    .mobile-nav-list .dropdown-list-news{
+        left: 300px;
+    }
+    
+    .mobile-nav-list .dropdown-list-about{
+        left: 625px;
+    }
+    
+    .mobile-nav-list .dropdown-list-media{
+        left: 785px;
+    }
+
+    
+/*  Page Container Background Image for Large Desktop  */
+    
+    .ghost-btn {
+        font-size: 2.5vw;
+    }
+    
+    
+/*    */
+    
+    .event-card-img img{
+        width: 100%;
+        max-height: 430px;
+        display: block;
+    }
+    
+                            /* -------------------------------------
+
+                                    Chaning Menu and Header Height in
+                                    Desktop View                   
+
+                                --------------------------------------*/
+    
+    #nav-list-container{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        background-color: #757575;
+        width: 100%;
+    }
+    
+    #nav-list-container .mobile-nav-list {
+        width: 1300px;
+/*        border: 1px solid red;*/
+    }
+    
+    .menu {        
+        height: 120px;
+    }
+    
+    .menu .header-logo img {        
+/*        border: 1px solid red;*/
+        padding: 10px;
+        padding-left: 20px;
+        height: 100px;
+    }
+
+    
+                                /* -------------------------------------
+
+                                        Desktop View Footer Section
+
+                                --------------------------------------*/
+    footer{
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    
+    footer div {        
+/*        border: 1px solid white;*/
+/*        width: 1300px;*/
+    }
+    
+    footer div.social-media,
+    footer div.address,
+    footer div.site-map
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+/*        align-items: center;*/
+        -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+/*        border: 1px solid white;*/
+    }
+    
+    footer div.site-map{
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    
+    footer div.social-media div{
+        margin: 0;
+        padding: 0;
+        -ms-flex-item-align:start;
+        align-self:flex-start;
+        margin-bottom: -35px;
+    }
+    
+    #center-wlc-logo-in-social-media{
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+    }
+    
+    footer div.copyright {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+    
+    .home-event-and-fighter-card-container{
+        
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    
+    .home-event-and-fighter-card-container .home-event-card-container{
+        -webkit-box-flex: 2;
+        -ms-flex: 2;
+        flex: 2;
+        -ms-flex-preferred-size: 800px;
+        flex-basis: 800px;
+    }
+    
+    .home-event-and-fighter-card-container .home-fighter-card-container {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        -ms-flex-preferred-size: 400px;
+        flex-basis: 400px;
+        height: auto;
+    }
+    
+    
+/*  Home Page ရဲ့ Main Event Card ကို ပြင်ဆင်  */    
+
+.event-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+    
+.home-fighter-card-container section .data{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+    .home-fighter-card-container section .data p{
+        
+        -ms-flex-preferred-size: 50%;
+        
+        flex-basis: 50%;
+/*        border: 1px solid red;*/
+    }
+    
+    .home-fighter-card-container section .data p:last-child {        
+        -ms-flex-preferred-size: 100%;        
+        flex-basis: 100%;
+    }
+    
+    
+                            /* -------------------------------------
+
+                            Home Page News & Partner Section -> Desktop
+
+                            --------------------------------------*/
+
+
+.section-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 15px;
+/*    border: 1px solid white;*/
+}
+
+.section-title h1{
+    text-transform: uppercase;
+    font-size: 3.5em;
+    color: #c5181e;
+    -ms-flex-preferred-size: 10%;
+    flex-basis: 10%;
+/*    border: 1px solid black;*/
+}
+
+.section-title .title-line {
+    display: block;
+    -ms-flex-preferred-size: 90%;
+    flex-basis: 90%;
+	width: 100%;
+	height: 0px;
+	border-bottom: 50px solid #c5181e;
+	border-left: 100px solid transparent;
+/*    border: 1px solid white;*/
+}
+    
+    /* modify about wlc title */
+    #about-wlc-title.section-title h1{
+        flex-basis: 15%;
+    }
+    
+    #about-wlc-title.section-title .title-line{
+        flex-basis: 85%;
+    }
+    
+    /* modify about AGD LMF title */
+    #about-agd-title.section-title h1{
+        flex-basis: 45%;
+    }
+    
+    #about-agd-title.section-title .title-line{
+        flex-basis: 55%;
+    }
+
+    
+                            /* -------------------------------------
+
+                            About WLC Page Section -> Mobile First
+
+                            --------------------------------------*/
+
+.about-wlc-container .about-wlc-section{
+    display: flex;
+    flex-direction: row;    
+    margin-bottom: 15px;
+    padding: 0px;
+    max-height: 300px;
+    /*  google material design card  */
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+    .about-wlc-section .photo-container{
+        flex: 1;
+    }
+    
+/* photo container */
+.about-wlc-section .photo-container img{
+    width: 100%;
+    max-height: 300px;
+    display: block;    
+}
+    
+    .about-wlc-section .photo-container.order2{
+        order: 1;
+    }
+    
+    .about-wlc-section .photo-container.order4{
+        order: 1;
+    }
+    
+    .about-wlc-section .photo-container.order6{
+        order: 1;
+    }
+
+    
+    .about-wlc-container .about-wlc-section .about-wlc-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 2;
+        padding: 30px;
+    }
+    
+
+    
+
+}

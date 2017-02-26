@@ -1,0 +1,79 @@
+
+/*--------------------------------
+Page Title of Ma Ei Mon
+---------------------------------*/
+
+/*-------Moible First------------*/
+#home-page-container{
+    width: 100%;
+    height: auto;    
+/*    border: 1px solid red;*/
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.section-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 15px;
+/*    border: 1px solid white;*/
+}
+
+.section-title h1{
+    text-transform: uppercase;
+    font-size: 3.5em;
+    color: #c5181e;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+/*    border: 1px solid black;*/
+}
+
+.section-title .title-line {
+    display: none;
+    -ms-flex-preferred-size: 65%;
+    flex-basis: 65%;
+	width: 100%;
+	height: 0px;
+	border-bottom: 50px solid red;
+	border-left: 100px solid transparent;
+}
+
+
+/* Tablet Styles */
+
+@media only screen and (min-width: 401px) and (max-width: 750px){
+    
+}
+
+@media only screen and (min-width: 751px) and (max-width: 1300px){
+
+    
+    /*  Fighter Page  */
+    #fighter-title.section-title h1{
+        flex-basis: 40%;
+    }
+    
+    #fighter-title.section-title .title-line{
+        flex-basis: 60%;
+    }
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+/*  Fighter Page  */
+    #fighter-title.section-title h1{
+        flex-basis: 30%;
+    }
+    
+    #fighter-title.section-title .title-line{
+        flex-basis: 70%;
+    }
+}
