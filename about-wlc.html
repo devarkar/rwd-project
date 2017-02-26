@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <title>Responsive Design Testing</title>
+        <link rel="stylesheet" href="assets/css/style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="//db.onlinewebfonts.com/c/152a08c8b8694816976650908f097735?family=Accidental+Presidency+V2+V2" rel="stylesheet" type="text/css"/>
+        <script src="https://use.fontawesome.com/8080ddcafb.js"></script>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+    </head>
+    
+    <body>
+
+        
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++
+       |               Navigation Header                 |
+       ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        
+        <header>            
+            <div class="section menu">
+                    
+                    <a class="header-logo" href="#">
+                        <img src="assets/img/wlc-logo.png" />
+                    </a>
+                    <a class="mobile-btn" href="#" data-transition="slidedown">
+                        &#x2630;
+                    </a>
+                    <div id="hexagon"></div>
+            </div>
+        </header>
+        
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++
+       |               Output Navigation List            |
+       ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        
+        <div id="nav-list-container">
+            <div class="section mobile-nav-list">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-btn-event" href="#">
+                            Events                             
+                            <i style="font-size:15px" class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-list-event">
+                            <li>
+                                <a href="#">WLC</a>                                
+                            </li>
+                            <li>
+                                <a href="#">Lekkha Moun Fight</a>
+                            </li>                        
+                        </ul>
+                        
+                    </li>
+                    <li>
+                        <a class="dropdown-btn-news" href="#">
+                            Headlines
+                            <i style="font-size:15px" class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-list-news">
+                            <li>
+                                <a href="#">WLC</a>                                
+                            </li>
+                            <li>
+                                <a href="#">Lekkha Moun Fight</a>
+                            </li>                        
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Fighters</a>
+                    </li>
+                    <li>                        
+                        <a class="dropdown-btn-about" href="#">
+                            About
+                            <i style="font-size:15px" class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-list-about">
+                            <li>
+                                <a href="#">WLC</a>                                
+                            </li>
+                            <li>
+                                <a href="#">Lekkha Moun Fight</a>
+                            </li>                        
+                        </ul>
+                    </li>
+                    <li>                        
+                        <a class="dropdown-btn-media" href="#">
+                            Media
+                            <i style="font-size:15px" class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-list-media">
+                            <li>
+                                <a href="#">WLC</a>                                
+                            </li>
+                            <li>
+                                <a href="#">Lekkha Moun Fight</a>
+                            </li>                        
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Play Fantasy</a>
+                    </li>
+                    <li>
+                        <a href="#">Get Tickets</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++
+       |               About of WLC Image Banner           |
+       ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        
+        <div class="section header">
+            <div class="photo">
+                <picture>
+                    <source media="(min-width:401px)" 
+                            srcset="assets/img/2.jpg 2000w,
+                                    assets/img/2.jpg 1000w"
+                            sizes="(min-width: 1401px) 100vw, 100vw" />
+
+                    <source media="(max-width:400px)" 
+                            srcset="assets/img/photo-tall.jpg" />
+
+                    <img src="assets/img/photo-small.jpg" />
+                </picture>
+            </div>
+        </div> <!-- section header -->   
+                
+     <!-- +++++++++++++++++++++++++++++++++++++++++++++++++
+           |               Page Title Section            |
+           ++++++++++++++++++++++++++++++++++++++++++++++++++ -->        
+        
+        <div id="page-title">
+            <h1>About WLC</h1>            
+        </div>
+        
+        <div class="page">
+            
+             <!-- +++++++++++++++++++++++++++++++++++++++++++++++++
+            |               About WLC Page Section                |
+            ++++++++++++++++++++++++++++++++++++++++++++++++++ -->  
+            
+            <div id="home-page-container">
+                <div id="about-wlc-title" class="section-title">
+                    <h1>about wlc</h1>
+                    <div class="title-line"></div>
+                </div>
+                
+                <div class="about-wlc-container">
+                    <div class="about-wlc-section">
+                        <div class="photo-container order1">
+                            <img src="assets/img/wlc-logo.svg" />
+                        </div>             
+                        <div class="about-wlc-data">
+                            <p>
+                                <span>World Lethwei Championship</span> is the definitive global sports media property for 
+                                Lethwei. Founded in 2016, the Myanmar-based promotion has brought together the 
+                                greatest fighters in the history of Lethwei and has the backing of the Burmese 
+                                government to grow the sport of Lethwei on the international stage.
+                            </p>
+                            <p>
+                                Combining a world-class event atmosphere with best martial arts strikers in the 
+                                world, World Lethwei Championship delivers a breath taking experience for both fans 
+                                in attendance and the millions watching at home.
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="about-wlc-section">
+                        <div class="photo-container order2">
+                            <img src="assets/img/lethwei.jpg" />
+                        </div>
+                        <div class="about-wlc-data">
+                            <p>
+                                <span>Lethwei</span> is the Burmese national martial arts for self-defence. History dates the 
+                                martial arts back more than a millennium ago and were used in unarmed combat in 
+                                several wars.
+                            </p>
+                            <p>
+                                Lethwei is steeped in tradition and rituals are conducted before and after the 
+                                fights. Traditional Burmese music is also played while the fight is taking place.
+                            </p>
+                            <p>
+                                In Lethwei, hands, feet, knees, elbows and head are permitted to be used in the 
+                                fight. The fights are judged by knockouts, where the referee will start counting 
+                                once a competitor has been felled, or the bout will be decided by three judges.
+                            </p>
+                        </div>                      
+                    </div>
+                    <div class="about-wlc-section">
+                        <div class="photo-container order3">
+                            <img src="assets/img/WLC-Blet-Final.jpg" />
+                        </div>
+                        <div class="about-wlc-data">
+                            <p>
+                                
+                                <span>World Lethwei Champion</span> will win the World Lethwei Champion Belt. Weighing more than 
+                                6kg, the belt is gold and will be the most expensive belt ever made in lethwei history. 
+                                The gold belt will be awarded to the best fighters in each weight class and a sliver 
+                                belt will be awarded to the best local fighter in each weight class.
+                            </p>
+                        </div>                                                
+                    </div>
+                    
+                    <div class="about-wlc-section">
+                        <div class="photo-container order4">
+                            <img src="assets/img/U-Zay-Thiha.jpg" />
+                        </div>
+                        <div class="about-wlc-data">
+                            <p>
+                                <span>Zay Thiha</span> is the chairman of Lekkha Moun Co,Ltd the parent company of World Lethwei 
+                                Championship. With more than 20 years of experience spearheading the growth of 
+                                Myanmar's leading brands in construction, IT, hospitality and sports, Mr Zay is well 
+                                poised to drive the growth of the country's most revered combat sports.
+                            </p>                        
+                        </div>                        
+                    </div>
+                    <div class="about-wlc-section">
+                        <div class="photo-container order5">
+                            <img src="assets/img/WLC-BOD.jpg" />
+                        </div>
+                        <div class="about-wlc-data">
+                            <p>
+                                The <span>Board of Directors</span> also include Co Sithu Steve, a pioneer in marketing in the 
+                                country with more than two decades of experience. It also includes Ko Kyaw Aung, a top 
+                                international businessman having led projects in multiple countries across Asia, and 
+                                Ko Zarni Soe, managing director of construction company 3G Alliance.
+                            </p>
+                            <p>
+                                Combining a world-class event atmosphere with best martial arts strikers in the 
+                                world, World Lethwei Championship delivers a breath taking experience for both fans 
+                                in attendance and the millions watching at home.
+                            </p>
+                        </div>                        
+                    </div>
+                    <div class="about-wlc-section">
+                        <div class="photo-container order6">
+                            <img src="assets/img/WLC-Stage.jpg" />
+                        </div>
+                        <div class="about-wlc-data">
+                            <p>
+                                <span>Mingalardon Event Zone</span> is an event space located in Mingalardon Township in Yangon, Myanmar. Specifically created for World Lethwei Championship, the arena can host up to 5,000 people and boasts state-of-the-art facilities like a dedicated VIP area, cashless transactions and more to provide fans the ideal event experience!
+                            </p>                        
+                            <p>
+                                Mingalardon Event Zone is located within Royal Mingalardon Golf & Country Club on Khayae Pin Road, Minglardon Township, Yangon, Myanmar.
+                            </p>
+                        </div>                        
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div> <!-- page -->
+        
+        
+        <footer>
+            <div class="site-map">
+                <ul>
+                    <h3>MENU</h3>
+
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Events</a>
+                    </li>
+                    <li>
+                        <a href="#">Headlines</a>
+                    </li>
+                    <li>
+                        <a href="#">Fighters</a>
+                    </li>
+                    <li>
+                        <a href="#">About WLC</a>
+                    </li>
+                    <li>
+                        <a href="#">Media</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="address">
+                <h3>GET IN TOUCH</h3>
+                <h4>Address</h4>
+                <p>
+                    No(71), Thunandar Street,
+                    Thumingalar Estate,
+                    Thingankyun Township, Yangon.
+                </p>
+                <h4>Phone</h4>
+                <p>
+                    +959 875369208 - Office <br/>
+                    +959 353363114 - Fax
+                </p>
+                
+                <h4>Email</h4>
+                <p>
+                    info@worldlethwei.com
+                </p>
+            </div>
+
+            <div class="social-media">
+                <h3>SOCIAL MEDIA</h3>
+                <p>Our National Feeds</p>
+                <div>
+                    <a class="social-ghost-button-ytube" href="#">
+                      <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-ghost-button-fb" href="#">
+                      <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-ghost-button-twitter" href="#">
+                      <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </a>
+                    <a class="social-ghost-button-gplus" href="#">
+                      <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div id="center-wlc-logo-in-social-media">
+                    <img src="http://drive.google.com/uc?export=view&id=0B0jGJ97eJi9nYWp1d1MydDZnYkU" />
+                </div>                        
+            </div>
+            
+            <div class="copyright">
+                &copy; 2017 World Lethwei Championship
+            </div>
+        </footer>
+        
+        
+        <!-- Include JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script></script>
+        <script src="assets/js/holder.js"></script>
+        
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+        </script>
+
+        
+        <script>
+            $(function(){
+                $('.mobile-btn').on('click',function(){
+                    $('.mobile-nav-list').toggleClass('open');
+                });
+            });
+        </script>
+        <script>
+            $(function(){
+                $('.dropdown-btn-event').on('click',function(){
+                    $('.dropdown-list-event').toggleClass('open');
+                });
+            });
+        </script>
+        <script>
+            $(function(){
+                $('.dropdown-btn-news').on('click',function(){
+                    $('.dropdown-list-news').toggleClass('open');
+                });
+            });
+        </script>
+        <script>
+            $(function(){
+                $('.dropdown-btn-about').on('click',function(){
+                    $('.dropdown-list-about').toggleClass('open');
+                });
+            });
+        </script>
+        <script>
+            $(function(){
+                $('.dropdown-btn-media').on('click',function(){
+                    $('.dropdown-list-media').toggleClass('open');
+                });
+            });
+        </script>
+        <script>
+          w3.slideshow(".nature", 8000);
+        </script>
+        
+        <script>
+          w3.slideshow(".fighter-profile-slider", 8000);
+        </script>
+        
+    </body>
+</html>
