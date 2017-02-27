@@ -7,6 +7,145 @@
 @import "media-query.css";
 
 
+
+/*------------------------------
+WLC Events Detial Page
+Moible First
+------------------------------*/
+.wlc-event-detail-container{
+/*    border: 3px solid red;*/
+    margin: 15px;
+}
+
+.wlc-event-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*  google material design card  */
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.wlc-event-detail-photo img{
+    width: 100%;
+    display: block;
+}
+
+.wlc-event-detail-title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.wlc-event-detail-title img{
+    height: 150px;
+    padding: 10px;
+}
+
+.wlc-event-detail-title h1,
+.wlc-event-detail-title h2,
+.wlc-event-detail-title h3{
+    text-align: center;
+    width: 100%;    
+}
+
+.wlc-event-detail-title h1{
+    font-size: 1.5em;
+}
+
+.wlc-event-detail-title h2{
+    color: #c5181e;
+    font-size: 3em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.wlc-event-detail-title a{
+    font-size: 1.5em;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.event-google-map{
+    width: 100%;
+    height: auto;
+}
+
+.event-detail-description{
+    border-bottom: 2px solid black;    
+    padding: 15px;
+    line-height: 1.5em;
+}
+
+.event-detail-description h2{
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.event-detail-description ul{
+    list-style-type: none;
+}
+
+.event-detail-description li{    
+    font-size: 1.2em;
+}
+
+.event-detial-sub-title{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px;
+}
+
+/*------------------------------
+WLC Events Detial Page
+Tablet Style
+------------------------------*/
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+/* It is no need! */
+}
+
+
+/*------------------------------
+WLC Events Detial Page
+Desktop Style
+------------------------------*/
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .wlc-event-detail-container{
+        
+    }
+    
+    #event-detail-1st-section{
+        display: flex;
+        flex-wrap: nowrap;        
+    }
+    
+    .wlc-event-detail-title{
+        flex-shrink: 2;
+    }
+    
+    .wlc-event-detail-photo img{
+        height: 100%;
+        display: block;
+    }
+    
+    .event-detail-description{
+        flex-basis: 70%;
+        border-bottom: none;
+        border-right: 2px solid black;
+    }
+    
+    .event-detial-sub-title{
+        flex-basis: 30%;
+    }
+
+}
+
+
+
 /*------------------------------
 WLC Events Page
 Moible First
@@ -30,6 +169,8 @@ Moible First
 }
 
 .wlc-upcomming-data{
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
     text-transform: uppercase;
 /*    border: 2px solid red;*/
@@ -39,10 +180,16 @@ Moible First
 
 .wlc-upcomming-data h1{
     color: #c5181e;
+    width: 100%;
+}
+
+.wlc-upcomming-data h2{
+    width: 100%;
 }
 
 .wlc-upcomming-data a{
     font-size: 1.5em;
+    width: 50%;
 }
 
 .wlc-upcomming-event-photo{
@@ -113,6 +260,7 @@ Desktop Style
     .wlc-upcomming-data a{
         align-self: flex-end;
         font-size: 1.5em;
+        width: 50%;
     }
     
     /*Event VS Photo*/
