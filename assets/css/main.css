@@ -9,9 +9,125 @@
 
 
 /*------------------------------
-WLC Events Detial Page
+WLC News Page
 Moible First
 ------------------------------*/
+.headlines-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+/*    border: 2px solid red;*/
+}
+
+.headline-section{
+/*    border: 1px solid white;*/
+}
+
+.headline-section .news {
+    margin-bottom: 15px;
+    /*  google material design card  */
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.news-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+/*    border: 1px solid black;*/
+}
+
+.news-data h1 {
+    color: #c5181e;
+    text-transform: uppercase;
+}
+
+.news-data p{
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+.news-data a{
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.news-photo img{
+    width: 100%;
+    display: block;
+}
+
+.facebook-section{
+    width: 100%;
+/*    border: 1px solid green;*/
+}
+
+
+
+
+/*------------------------------
+WLC News Page
+Tablet Style
+------------------------------*/
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .headlines-container{
+/*        border: 2px solid red;*/
+    }
+}
+
+
+
+/*------------------------------
+WLC News Page
+Desktop Style
+------------------------------*/
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .headlines-container{
+        justify-content: space-between;
+        flex-wrap: nowrap;
+/*        border: 2px solid green;*/
+    }
+    
+    .news{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    .news .news-photo{
+/*        border: 3px solid red;*/
+        width: 100%;
+        flex: 2;
+/*        flex-grow: 2;*/
+    }
+    
+    .news .news-data{
+        flex: 2;
+/*        flex-shrink: 1.5;*/
+/*        flex-shrink: 15;*/
+    }
+    
+    .news-photo img{
+        height: 100%;
+        display: block;
+    }
+    
+    .facebook-section{
+        margin-left: 20px;        
+/*        border: 2px solid red;*/
+    }
+}
+
+
+
+
+
+                            /*------------------------------
+                            WLC Events Detial Page
+                            Moible First
+                            ------------------------------*/
 .wlc-event-detail-container{
 /*    border: 3px solid red;*/
     margin: 15px;
@@ -98,20 +214,20 @@ Moible First
     padding: 25px;
 }
 
-/*------------------------------
-WLC Events Detial Page
-Tablet Style
-------------------------------*/
+                            /*------------------------------
+                            WLC Events Detial Page
+                            Tablet Style
+                            ------------------------------*/
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
 /* It is no need! */
 }
 
 
-/*------------------------------
-WLC Events Detial Page
-Desktop Style
-------------------------------*/
+                            /*------------------------------
+                            WLC Events Detial Page
+                            Desktop Style
+                            ------------------------------*/
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
     .wlc-event-detail-container{
@@ -146,10 +262,10 @@ Desktop Style
 
 
 
-/*------------------------------
-WLC Events Page
-Moible First
-------------------------------*/
+                            /*------------------------------
+                            WLC Events Page
+                            Moible First
+                            ------------------------------*/
 .wlc-upcomming-event-container{
 /*    border: 2px solid black;*/
     margin: 15px;
@@ -209,10 +325,10 @@ Moible First
 }
 
 
-/*------------------------------
-WLC Events Page
-Tablet Style
-------------------------------*/
+                            /*------------------------------
+                            WLC Events Page
+                            Tablet Style
+                            ------------------------------*/
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {    
     /*WLC Event Card*/
@@ -231,10 +347,10 @@ Tablet Style
     }
 }
 
-/*------------------------------
-WLC Events Page
-Desktop Style
-------------------------------*/
+                            /*------------------------------
+                            WLC Events Page
+                            Desktop Style
+                            ------------------------------*/
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
     
@@ -272,10 +388,10 @@ Desktop Style
 
 
 
-/*------------------------------
-Fighter Page
-Moible First
-------------------------------*/
+                            /*------------------------------
+                            Fighter Page
+                            Moible First
+                            ------------------------------*/
 .feature-fighter-container{
     display: flex;
     flex-wrap: wrap;
@@ -318,10 +434,10 @@ Moible First
     display: block;
 }
 
-/*------------------------------
-Fighter Page
-Tablet Style
-------------------------------*/
+                            /*------------------------------
+                            Fighter Page
+                            Tablet Style
+                            ------------------------------*/
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {    
     
@@ -339,10 +455,10 @@ Tablet Style
     }
 }
 
-/*------------------------------
-Fighter Page
-Desktop Style
-------------------------------*/
+                            /*------------------------------
+                            Fighter Page
+                            Desktop Style
+                            ------------------------------*/
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
     
