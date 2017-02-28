@@ -1,19 +1,13 @@
-@font-face {font-family: "Accidental Presidency V2 V2";
-		  src: url("font/152a08c8b8694816976650908f097735.eot"); /* IE9*/
-		  src: url("font/152a08c8b8694816976650908f097735.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-		  url("font/152a08c8b8694816976650908f097735.woff2") format("woff2"), /* chrome、firefox */
-		  url("font/152a08c8b8694816976650908f097735.woff") format("woff"), /* chrome、firefox */
-		  url("font/152a08c8b8694816976650908f097735.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-		  url("font/152a08c8b8694816976650908f097735.svg#Accidental Presidency V2 V2") format("svg"); /* iOS 4.1- */
-		}
-
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+/*Ei Mon Title Font*/
+@import url('https://fonts.googleapis.com/css?family=Khand');
+/*Ei Mon Paragrph Font*/
+@import url('https://fonts.googleapis.com/css?family=Yantramanav');
 
 h1,h2,h3,h4,h5,h6,a{
-    font-family: "Accidental Presidency V2 V2";
-    font-weight: lighter;    
+    font-family: 'Khand', sans-serif;
+    font-weight: bold;
 }
 
 p{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Yantramanav', sans-serif;
 }

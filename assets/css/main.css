@@ -6,6 +6,207 @@
 @import "footer.css";
 @import "media-query.css";
 
+/*------------------------------
+WLC Media Page
+Moible First
+------------------------------*/
+/*
+.media-vedio-hero-banner{
+    width: 100%;
+    height: 400px;
+}
+*/
+
+
+.media-vedio-hero-banner {
+position: relative;
+padding-bottom: 36.25%;
+/*    padding-bottom: 30%;*/
+padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.media-vedio-hero-banner iframe,
+.media-vedio-hero-banner object,
+.media-vedio-hero-banner embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.media-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px;    
+}
+
+
+.media-card{
+    margin: 10px;    
+/*    border: 3px solid red;*/
+    /*  google material design card  */
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    
+}
+
+.media-img{
+    position: relative;    
+}
+
+.media-img img{
+    width: 100%;
+    height: auto;    
+}
+
+.media-img .play-button{
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);    
+
+}
+
+.media-card h1,
+.media-card p{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.media-card h1{
+    font-size: 1.5em;
+}
+
+.media-card p{
+    padding: 10px;
+}
+
+.media-card p:last-child{
+    margin-bottom: 10px;
+}
+
+
+/*------------------------------
+WLC Media Page
+Tablet Styles
+------------------------------*/
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .media-container{
+        
+    }
+    
+           
+}
+
+
+/*------------------------------
+WLC Media Page
+Desktop Styles
+------------------------------*/
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .media-card{
+        flex-basis: calc(25% - 5px);
+    }
+    
+    #youtube.media-card{        
+        flex-basis: 100%;
+    }
+    
+    #youtube.media-card .media-vedio-hero-banner {
+        position: relative;
+        padding-bottom: 56.25%;
+        /*    padding-bottom: 30%;*/
+        padding-top: 30px; height: 0; overflow: hidden;
+    }
+    
+
+}
+
+
+
+
+/*------------------------------
+WLC News Detail Page
+Moible First
+------------------------------*/
+/*-----------Headlines Detail Pages ---------------*/
+.news-detail-container{
+    margin: 15px;
+/*    border: 3px solid red;*/
+}
+
+.news-detail-section{
+    display: flex;    
+/*    border: 3px solid black;*/
+    margin-bottom: 20px;
+    /*  google material design card  */
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.news-detail-photo img{
+    width: 100%;
+    display: block;
+/*    border: 3px solid green;*/
+}
+
+.news-detail-data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+/*    border: 3px solid red;*/
+}
+
+.news-detail-data h1{
+    color: #c5181e;
+}
+
+.news-detail-data p{    
+    line-height: 1.5em;
+    margin: 10px;
+}
+
+
+/*------------------------------
+WLC News Detail Page
+Tablet Style
+------------------------------*/
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .news-detail-container{
+/*        border: 2px solid red;*/
+    }
+}
+
+
+/*------------------------------
+WLC News Detail Page
+Desktop Style
+------------------------------*/
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    
+    .news-detail-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .news-detail-section{
+        flex: 2;
+    }
+    
+    .news-detail-facebook-section{
+        margin-left: 20px;
+        flex: 1;
+    }
+}
 
 
 /*------------------------------
@@ -118,6 +319,22 @@ Desktop Style
         margin-left: 20px;        
 /*        border: 2px solid red;*/
     }
+    
+    .news-detail.headline-section{
+        flex: 2;
+    }
+    
+    .news-detail.facebook-section{
+        flex: 1;
+    }
+    
+    .news-detail.headline-section .news{
+        display: flex;        
+        flex-direction: column;
+        flex-shrink: 5;
+        border: 3px solid red;        
+    }
+        
 }
 
 

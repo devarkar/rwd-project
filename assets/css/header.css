@@ -19,11 +19,11 @@ body{
         background: -webkit-linear-gradient(
           rgba(255, 255, 255, 0.1),
           rgba(255, 255, 255, 0.1)
-        ), url(../img/footer_lodyas.png);
+        ), url(../img/wlc-bg.png);
         background: linear-gradient(
           rgba(255, 255, 255, 0.1),
           rgba(255, 255, 255, 0.1)
-        ), url(../img/footer_lodyas.png);
+        ), url(../img/wlc-bg.png);
 /*        background-image: url(../img/footer_lodyas.png);*/
         background-repeat: repeat;
         

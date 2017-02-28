@@ -1,11 +1,5 @@
-@font-face {font-family: "Accidental Presidency V2 V2";
-		  src: url("font/152a08c8b8694816976650908f097735.eot"); /* IE9*/
-		  src: url("font/152a08c8b8694816976650908f097735.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-		  url("font/152a08c8b8694816976650908f097735.woff2") format("woff2"), /* chrome、firefox */
-		  url("font/152a08c8b8694816976650908f097735.woff") format("woff"), /* chrome、firefox */
-		  url("font/152a08c8b8694816976650908f097735.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-		  url("font/152a08c8b8694816976650908f097735.svg#Accidental Presidency V2 V2") format("svg"); /* iOS 4.1- */
-		}
+/*Ei Mon Title Font*/
+@import url('https://fonts.googleapis.com/css?family=Anton');
 
 
 /* Universal Selector */
@@ -13,8 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Accidental Presidency V2 V2";
-    font-weight: lighter;
+    font-family: 'Anton', sans-serif;
 }
 
 /*
@@ -28,11 +21,11 @@ body{
         background: -webkit-linear-gradient(
           rgba(255, 255, 255, 0.1),
           rgba(255, 255, 255, 0.1)
-        ), url(../img/footer_lodyas.png);
+        ), url(../img/wlc-bg.png);
         background: linear-gradient(
           rgba(255, 255, 255, 0.1),
           rgba(255, 255, 255, 0.1)
-        ), url(../img/footer_lodyas.png);
+        ), url(../img/wlc-bg.png);
 /*        background-image: url(../img/footer_lodyas.png);*/
         background-repeat: repeat;
         
@@ -380,7 +373,10 @@ header{
 }
 
 
-
+.text .ghost-btn{
+    font-size: 1em;
+    padding: 10px;
+}
 
 .numbertext {
     color: #f2f2f2;
