@@ -1,13 +1,23 @@
 /*Ei Mon Title Font*/
-@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Khand');
+/*Ei Mon Paragrph Font*/
+@import url('https://fonts.googleapis.com/css?family=Yantramanav');
 
 
 /* Universal Selector */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Anton', sans-serif;
+    box-sizing: border-box;    
+}
+
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Khand', sans-serif;
+    font-weight: bold;
+}
+
+p{
+    font-family: 'Yantramanav', sans-serif;
 }
 
 /*
@@ -470,6 +480,8 @@ header{
     width:100%;
     color: white;
     font-size: 2em;
+    font-family: 'Khand', sans-serif;
+    font-weight: bold;
     text-align: center;
     bottom: 0;
     text-transform: uppercase;
@@ -495,9 +507,13 @@ header{
     -ms-flex-align: center;
     align-items: center;
     text-transform: uppercase;
-    font-size: 1.8em;
+    
     padding: 10px;
 /*    border: 1px solid red;*/
+}
+
+.event-card-data p{
+    font-size: 1.3em;
 }
 
 .event-action {
@@ -511,8 +527,9 @@ header{
 }
 
 .home-event-and-fighter-card-container .ghost-btn{
-    font-size: 1em;
+    font-size: 1.5em;
     margin: 2px;
+    margin-top: 15px;
     padding: 10px;
 }
 
@@ -557,7 +574,7 @@ header{
 
 .home-fighter-card-container section .data p{
     font-weight: lighter;
-    font-size: 1.8em;
+    font-size: 1.3em;
     text-transform: uppercase;
     width: 100%;
     margin: 0 auto;
@@ -565,7 +582,7 @@ header{
 }
 
 .home-fighter-card-container section .data p > .ghost-btn{
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 2px;
     padding: 10px;
 }
@@ -684,6 +701,9 @@ input[type="radio"]:checked + section { display: -webkit-box; display: -ms-flexb
 }
 
 .home-news-action a{
+    margin-top: 10px;
+    margin-bottom: -50px;
+    padding: 10px;
     font-size: 1.5em;    
 }
 
@@ -1406,6 +1426,13 @@ footer div.copyright{
     .home-event-and-fighter-card-container .home-fighter-card-container {
         flex: 1;
     }
+    
+
+    /*   channing ghost button of slider */
+    .text .ghost-btn{
+        font-size: 2.5em;
+    }
+    
 }
 
 /* --------------------------------------------------------------------------------------------------------------- */
@@ -1716,20 +1743,20 @@ footer div.copyright{
     
     /* modify about wlc title */
     #about-wlc-title.section-title h1{
-        flex-basis: 15%;
+        flex-basis: 25%;
     }
     
     #about-wlc-title.section-title .title-line{
-        flex-basis: 85%;
+        flex-basis: 75%;
     }
     
     /* modify about AGD LMF title */
     #about-agd-title.section-title h1{
-        flex-basis: 45%;
+        flex-basis: 50%;
     }
     
     #about-agd-title.section-title .title-line{
-        flex-basis: 55%;
+        flex-basis: 50%;
     }
 
     
@@ -1783,7 +1810,10 @@ footer div.copyright{
     }
     
 
-    
+/*   channing ghost button of slider */
+    .text .ghost-btn{
+        font-size: 3.5em;
+    }
 
 }
 
